@@ -12,6 +12,11 @@
 		CB0FAF9E2016566000F68B63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0FAF9C2016566000F68B63 /* Main.storyboard */; };
 		CB0FAFA02016566000F68B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB0FAF9F2016566000F68B63 /* Assets.xcassets */; };
 		CB0FAFA32016566000F68B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0FAFA12016566000F68B63 /* LaunchScreen.storyboard */; };
+		CB0FAFAC201656A100F68B63 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FAFAB201656A000F68B63 /* ApiProvider.swift */; };
+		CB0FAFAE201656E400F68B63 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FAFAD201656E400F68B63 /* Request.swift */; };
+		CB0FAFB02016585A00F68B63 /* GetNewsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FAFAF2016585A00F68B63 /* GetNewsRequest.swift */; };
+		CB0FAFB320165AF200F68B63 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FAFB220165AF200F68B63 /* Constants.swift */; };
+		CB0FAFB620165E1800F68B63 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FAFB520165E1800F68B63 /* News.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		CB0FAF9F2016566000F68B63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB0FAFA22016566000F68B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB0FAFA42016566000F68B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB0FAFAB201656A000F68B63 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		CB0FAFAD201656E400F68B63 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		CB0FAFAF2016585A00F68B63 /* GetNewsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsRequest.swift; sourceTree = "<group>"; };
+		CB0FAFB220165AF200F68B63 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CB0FAFB520165E1800F68B63 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,9 @@
 		CB0FAF972016566000F68B63 /* GetNewsVK */ = {
 			isa = PBXGroup;
 			children = (
+				CB0FAFB420165E0800F68B63 /* Entities */,
+				CB0FAFB120165ADC00F68B63 /* Helpers */,
+				CB0FAFAA2016568900F68B63 /* Request */,
 				CB0FAF982016566000F68B63 /* AppDelegate.swift */,
 				CB0FAF9A2016566000F68B63 /* ViewController.swift */,
 				CB0FAF9C2016566000F68B63 /* Main.storyboard */,
@@ -62,6 +75,32 @@
 				CB0FAFA42016566000F68B63 /* Info.plist */,
 			);
 			path = GetNewsVK;
+			sourceTree = "<group>";
+		};
+		CB0FAFAA2016568900F68B63 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				CB0FAFAB201656A000F68B63 /* ApiProvider.swift */,
+				CB0FAFAD201656E400F68B63 /* Request.swift */,
+				CB0FAFAF2016585A00F68B63 /* GetNewsRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CB0FAFB120165ADC00F68B63 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB0FAFB220165AF200F68B63 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB0FAFB420165E0800F68B63 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CB0FAFB520165E1800F68B63 /* News.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0FAFB02016585A00F68B63 /* GetNewsRequest.swift in Sources */,
+				CB0FAFAC201656A100F68B63 /* ApiProvider.swift in Sources */,
+				CB0FAFAE201656E400F68B63 /* Request.swift in Sources */,
 				CB0FAF9B2016566000F68B63 /* ViewController.swift in Sources */,
+				CB0FAFB620165E1800F68B63 /* News.swift in Sources */,
 				CB0FAF992016566000F68B63 /* AppDelegate.swift in Sources */,
+				CB0FAFB320165AF200F68B63 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
